@@ -87,7 +87,7 @@ public class TextJustification {
         for (String word : currentLine) {
             numberOfLetters += word.length();
         }
-        if (numberOfLetters+currentLine.size()>maxWidth) // no 100 sure
+        if (numberOfLetters+currentLine.size()>maxWidth)
         {
             List<String> stringList = new ArrayList<>();
             while (space + currentLine.get(i).length() <= maxWidth) {
