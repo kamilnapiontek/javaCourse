@@ -9,9 +9,7 @@ public class TextJustification {
     public static void main(String[] args) {
         TextJustification textJustification = new TextJustification();
         textJustification.writeText(new ArrayList<>(Arrays.asList("This","is","an","example","of","text","justification")),16);
-        System.out.println("****************************");
         textJustification.writeText(new ArrayList<>(Arrays.asList("What","must","be","acknowledgment","shall","be")),16);
-        System.out.println("****************************");
         textJustification.writeText(new ArrayList<>(Arrays.asList("Science","is","what","we","understand","well","enough","to",
                 "explain","to","a","computer.","Art","is","everything","else","we","do")),20);
     }
@@ -64,11 +62,11 @@ public class TextJustification {
                 System.out.print(currentLine.get(1));
                 break;
             default:
-                int numberOfLetters2 = 0;
+                int numberOfLettersDefault = 0;
                 for (String word : currentLine) {
-                    numberOfLetters2 += word.length();
+                    numberOfLettersDefault += word.length();
                 }
-                int freeSpace = maxWidth - numberOfLetters2;
+                int freeSpace = maxWidth - numberOfLettersDefault;
                 int singleSpace = freeSpace / (currentLine.size()-1);
                 int bonusSpace = freeSpace % (currentLine.size()-1);
 
