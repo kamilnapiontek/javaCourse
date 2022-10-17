@@ -68,7 +68,8 @@ public class TextJustification {
                 int singleSpace = freeSpace / (currentLine.size() - 1);
                 int bonusSpace = freeSpace % (currentLine.size() - 1);
 
-                System.out.print(currentLine.get(0));
+                String firstWord = currentLine.get(0);
+                System.out.print(firstWord);
                 for (int i = 1; i < currentLine.size(); i++) {
                     for (int j = 0; j < singleSpace; j++) {
                         System.out.print(" ");
