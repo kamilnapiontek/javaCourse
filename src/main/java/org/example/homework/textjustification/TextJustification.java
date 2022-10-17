@@ -9,9 +9,9 @@ public class TextJustification {
     public static void main(String[] args) {
         TextJustification textJustification = new TextJustification();
         textJustification.writeText(List.of("This", "is", "an", "example", "of", "text", "justification"), 16);
-        textJustification.writeText(new ArrayList<>(Arrays.asList("What", "must", "be", "acknowledgment", "shall", "be")), 16);
-        textJustification.writeText(new ArrayList<>(Arrays.asList("Science", "is", "what", "we", "understand", "well", "enough", "to",
-                "explain", "to", "a", "computer.", "Art", "is", "everything", "else", "we", "do")), 20);
+        textJustification.writeText(List.of("What", "must", "be", "acknowledgment", "shall", "be"), 16);
+        textJustification.writeText(List.of("Science", "is", "what", "we", "understand", "well", "enough", "to",
+                "explain", "to", "a", "computer.", "Art", "is", "everything", "else", "we", "do"), 20);
     }
 
     public void writeText(List<String> list, int maxWidth) {
